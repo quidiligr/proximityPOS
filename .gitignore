@@ -1,0 +1,15 @@
+.DS_Store
+xcuserdata/
+*.xcuserstate
+DerivedData/
+*.xcarchive
+*.xcresult
+Pods/
+Carthage/Build/
+.swiftpm/
+.build/
+# config: keep only examples
+*.xcconfig
+!Config/*example*
+# no binaries/media
+*.ipa *.dmg *.pkg *.zip *.tar *.tgz *.7z *.mp4 *.mov *.aiff *.wav *.pdf *.psd *.sketch

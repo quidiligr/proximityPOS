@@ -1,0 +1,1120 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		047E67DF1A65E82D001D7493 /* StripeiOSStaticFrameworkWithoutApplePay */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 047E67E01A65E82D001D7493 /* Build configuration list for PBXAggregateTarget "StripeiOSStaticFrameworkWithoutApplePay" */;
+			buildPhases = (
+				047E67E51A65E837001D7493 /* ShellScript */,
+			);
+			dependencies = (
+				047E67E41A65E833001D7493 /* PBXTargetDependency */,
+			);
+			name = StripeiOSStaticFrameworkWithoutApplePay;
+			productName = StripeiOSStaticWithoutApplePayFramework;
+		};
+		049E85221A607FFD000B66CD /* StripeiOSStaticFramework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 049E85231A607FFD000B66CD /* Build configuration list for PBXAggregateTarget "StripeiOSStaticFramework" */;
+			buildPhases = (
+				049E85281A608030000B66CD /* MultiPlatform Build */,
+			);
+			dependencies = (
+				049E85271A608027000B66CD /* PBXTargetDependency */,
+			);
+			name = StripeiOSStaticFramework;
+			productName = Framework;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		04415C671A6605B5001225ED /* STPAPIClientTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CDB51E1A5F3A9300B854EE /* STPAPIClientTest.m */; };
+		04415C681A6605B5001225ED /* STPFormEncoderTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CDB51F1A5F3A9300B854EE /* STPFormEncoderTest.m */; };
+		04415C6A1A6605B5001225ED /* STPApplePayTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CDB5211A5F3A9300B854EE /* STPApplePayTest.m */; };
+		04415C6B1A6605B5001225ED /* STPBankAccountFunctionalTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CDB5221A5F3A9300B854EE /* STPBankAccountFunctionalTest.m */; };
+		04415C6C1A6605B5001225ED /* STPBankAccountTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CDB5231A5F3A9300B854EE /* STPBankAccountTest.m */; };
+		04415C6D1A6605B5001225ED /* STPCardFunctionalTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CDB5241A5F3A9300B854EE /* STPCardFunctionalTest.m */; };
+		04415C6E1A6605B5001225ED /* STPCardTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CDB5251A5F3A9300B854EE /* STPCardTest.m */; };
+		04415C6F1A6605B5001225ED /* STPCertTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CDB5261A5F3A9300B854EE /* STPCertTest.m */; };
+		04415C701A6605B5001225ED /* STPTokenTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CDB5271A5F3A9300B854EE /* STPTokenTest.m */; };
+		04533E7D1A6877F400C7E52E /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D5BF9019BF958F009521A5 /* PassKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		045E7C091A5F41DE004751EF /* .framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CDB4421A5F2E1800B854EE /* .framework */; };
+		049E84D31A605E6A000B66CD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAFC12C516E5767F0066297F /* UIKit.framework */; };
+		049E84D41A605E7C000B66CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C74B9B164043050071C2CA /* Foundation.framework */; };
+		049E84D51A605E82000B66CD /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0D74F918F6106100966D7B /* Security.framework */; };
+		049E84D61A605E8F000B66CD /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D5BF9019BF958F009521A5 /* PassKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		049E84D71A605E99000B66CD /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04B94BC71A47B78A00092C46 /* AddressBook.framework */; };
+		04D12C111A5F556D0010446E /* .framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D12C061A5F556D0010446E /* .framework */; };
+		04D12C401A5F55FA0010446E /* STPAPIClientTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CDB51E1A5F3A9300B854EE /* STPAPIClientTest.m */; };
+		04D12C411A5F55FA0010446E /* STPFormEncoderTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CDB51F1A5F3A9300B854EE /* STPFormEncoderTest.m */; };
+		04D12C431A5F55FA0010446E /* STPBankAccountFunctionalTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CDB5221A5F3A9300B854EE /* STPBankAccountFunctionalTest.m */; };
+		04D12C441A5F55FA0010446E /* STPBankAccountTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CDB5231A5F3A9300B854EE /* STPBankAccountTest.m */; };
+		04D12C451A5F55FA0010446E /* STPCardFunctionalTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CDB5241A5F3A9300B854EE /* STPCardFunctionalTest.m */; };
+		04D12C461A5F55FA0010446E /* STPCardTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CDB5251A5F3A9300B854EE /* STPCardTest.m */; };
+		04D12C471A5F55FA0010446E /* STPCertTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CDB5261A5F3A9300B854EE /* STPCertTest.m */; };
+		04D12C481A5F55FA0010446E /* STPTokenTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CDB5271A5F3A9300B854EE /* STPTokenTest.m */; };
+		B6EE18CC1B2BBB5B006134B0 /* STPAPIClient+ApplePay.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EE188F1B2BBB5B006134B0 /* STPAPIClient+ApplePay.m */; };
+		B6EE18CD1B2BBB5C006134B0 /* Stripe+ApplePay.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EE18901B2BBB5B006134B0 /* Stripe+ApplePay.m */; };
+		B6EE18CE1B2BBB5C006134B0 /* Project-Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B6EE18921B2BBB5B006134B0 /* Project-Debug.xcconfig */; };
+		B6EE18CF1B2BBB5C006134B0 /* Project-Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B6EE18931B2BBB5B006134B0 /* Project-Release.xcconfig */; };
+		B6EE18D01B2BBB5C006134B0 /* Project-Shared.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B6EE18941B2BBB5B006134B0 /* Project-Shared.xcconfig */; };
+		B6EE18D11B2BBB5C006134B0 /* StripeiOS Tests-Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B6EE18951B2BBB5B006134B0 /* StripeiOS Tests-Debug.xcconfig */; };
+		B6EE18D21B2BBB5C006134B0 /* StripeiOS Tests-Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B6EE18961B2BBB5B006134B0 /* StripeiOS Tests-Release.xcconfig */; };
+		B6EE18D31B2BBB5C006134B0 /* StripeiOS Tests-Shared.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B6EE18971B2BBB5B006134B0 /* StripeiOS Tests-Shared.xcconfig */; };
+		B6EE18D41B2BBB5C006134B0 /* StripeiOS-Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B6EE18981B2BBB5B006134B0 /* StripeiOS-Debug.xcconfig */; };
+		B6EE18D51B2BBB5C006134B0 /* StripeiOS-Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B6EE18991B2BBB5B006134B0 /* StripeiOS-Release.xcconfig */; };
+		B6EE18D61B2BBB5C006134B0 /* StripeiOS-Shared.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B6EE189A1B2BBB5B006134B0 /* StripeiOS-Shared.xcconfig */; };
+		B6EE18D71B2BBB5C006134B0 /* StripeiOSStatic.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B6EE189B1B2BBB5B006134B0 /* StripeiOSStatic.xcconfig */; };
+		B6EE18D81B2BBB5C006134B0 /* StripeiOSStaticFramework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B6EE189C1B2BBB5B006134B0 /* StripeiOSStaticFramework.xcconfig */; };
+		B6EE18D91B2BBB5C006134B0 /* StripeiOSStaticFrameworkWithoutApplePay.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B6EE189D1B2BBB5B006134B0 /* StripeiOSStaticFrameworkWithoutApplePay.xcconfig */; };
+		B6EE18DA1B2BBB5C006134B0 /* StripeiOSStaticWithoutApplePay.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B6EE189E1B2BBB5B006134B0 /* StripeiOSStaticWithoutApplePay.xcconfig */; };
+		B6EE18DB1B2BBB5C006134B0 /* StripeOSX-Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B6EE189F1B2BBB5B006134B0 /* StripeOSX-Debug.xcconfig */; };
+		B6EE18DC1B2BBB5C006134B0 /* StripeOSX-Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B6EE18A01B2BBB5B006134B0 /* StripeOSX-Release.xcconfig */; };
+		B6EE18DD1B2BBB5C006134B0 /* StripeOSX-Shared.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B6EE18A11B2BBB5B006134B0 /* StripeOSX-Shared.xcconfig */; };
+		B6EE18DE1B2BBB5C006134B0 /* StripeOSXTests-Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B6EE18A21B2BBB5B006134B0 /* StripeOSXTests-Debug.xcconfig */; };
+		B6EE18DF1B2BBB5C006134B0 /* StripeOSXTests-Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B6EE18A31B2BBB5B006134B0 /* StripeOSXTests-Release.xcconfig */; };
+		B6EE18E01B2BBB5C006134B0 /* StripeOSXTests-Shared.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B6EE18A41B2BBB5B006134B0 /* StripeOSXTests-Shared.xcconfig */; };
+		B6EE18E11B2BBB5C006134B0 /* STPCheckoutDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = B6EE18A61B2BBB5B006134B0 /* STPCheckoutDelegate.h */; };
+		B6EE18E21B2BBB5C006134B0 /* STPCheckoutInternalUIWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = B6EE18A71B2BBB5B006134B0 /* STPCheckoutInternalUIWebViewController.h */; };
+		B6EE18E31B2BBB5C006134B0 /* STPCheckoutInternalUIWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EE18A81B2BBB5B006134B0 /* STPCheckoutInternalUIWebViewController.m */; };
+		B6EE18E41B2BBB5C006134B0 /* STPCheckoutOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EE18A91B2BBB5B006134B0 /* STPCheckoutOptions.m */; };
+		B6EE18E51B2BBB5C006134B0 /* STPCheckoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EE18AA1B2BBB5B006134B0 /* STPCheckoutViewController.m */; };
+		B6EE18E61B2BBB5C006134B0 /* STPCheckoutWebViewAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = B6EE18AB1B2BBB5B006134B0 /* STPCheckoutWebViewAdapter.h */; };
+		B6EE18E71B2BBB5C006134B0 /* STPColorUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = B6EE18AC1B2BBB5B006134B0 /* STPColorUtils.h */; };
+		B6EE18E81B2BBB5C006134B0 /* STPColorUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EE18AD1B2BBB5B006134B0 /* STPColorUtils.m */; };
+		B6EE18E91B2BBB5C006134B0 /* STPIOSCheckoutWebViewAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = B6EE18AE1B2BBB5B006134B0 /* STPIOSCheckoutWebViewAdapter.h */; };
+		B6EE18EA1B2BBB5C006134B0 /* STPIOSCheckoutWebViewAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EE18AF1B2BBB5B006134B0 /* STPIOSCheckoutWebViewAdapter.m */; };
+		B6EE18EB1B2BBB5C006134B0 /* STPOSXCheckoutWebViewAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = B6EE18B01B2BBB5B006134B0 /* STPOSXCheckoutWebViewAdapter.h */; };
+		B6EE18EC1B2BBB5C006134B0 /* STPOSXCheckoutWebViewAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EE18B11B2BBB5B006134B0 /* STPOSXCheckoutWebViewAdapter.m */; };
+		B6EE18ED1B2BBB5C006134B0 /* STPStrictURLProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = B6EE18B21B2BBB5B006134B0 /* STPStrictURLProtocol.h */; };
+		B6EE18EE1B2BBB5C006134B0 /* STPStrictURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EE18B31B2BBB5B006134B0 /* STPStrictURLProtocol.m */; };
+		B6EE18EF1B2BBB5C006134B0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6EE18B41B2BBB5B006134B0 /* Info.plist */; };
+		B6EE18F01B2BBB5C006134B0 /* STPAPIClient+ApplePay.h in Headers */ = {isa = PBXBuildFile; fileRef = B6EE18B71B2BBB5B006134B0 /* STPAPIClient+ApplePay.h */; };
+		B6EE18F11B2BBB5C006134B0 /* Stripe+ApplePay.h in Headers */ = {isa = PBXBuildFile; fileRef = B6EE18B81B2BBB5B006134B0 /* Stripe+ApplePay.h */; };
+		B6EE18F21B2BBB5C006134B0 /* STPCheckoutOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = B6EE18BA1B2BBB5B006134B0 /* STPCheckoutOptions.h */; };
+		B6EE18F31B2BBB5C006134B0 /* STPCheckoutViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = B6EE18BB1B2BBB5B006134B0 /* STPCheckoutViewController.h */; };
+		B6EE18F41B2BBB5C006134B0 /* STPAPIClient.h in Headers */ = {isa = PBXBuildFile; fileRef = B6EE18BC1B2BBB5B006134B0 /* STPAPIClient.h */; };
+		B6EE18F51B2BBB5C006134B0 /* STPBankAccount.h in Headers */ = {isa = PBXBuildFile; fileRef = B6EE18BD1B2BBB5B006134B0 /* STPBankAccount.h */; };
+		B6EE18F61B2BBB5C006134B0 /* STPCard.h in Headers */ = {isa = PBXBuildFile; fileRef = B6EE18BE1B2BBB5B006134B0 /* STPCard.h */; };
+		B6EE18F71B2BBB5C006134B0 /* STPNullabilityMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = B6EE18BF1B2BBB5B006134B0 /* STPNullabilityMacros.h */; };
+		B6EE18F81B2BBB5C006134B0 /* STPToken.h in Headers */ = {isa = PBXBuildFile; fileRef = B6EE18C01B2BBB5B006134B0 /* STPToken.h */; };
+		B6EE18F91B2BBB5C006134B0 /* Stripe.h in Headers */ = {isa = PBXBuildFile; fileRef = B6EE18C11B2BBB5B006134B0 /* Stripe.h */; };
+		B6EE18FA1B2BBB5C006134B0 /* StripeError.h in Headers */ = {isa = PBXBuildFile; fileRef = B6EE18C21B2BBB5B006134B0 /* StripeError.h */; };
+		B6EE18FB1B2BBB5C006134B0 /* STPAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EE18C31B2BBB5B006134B0 /* STPAPIClient.m */; };
+		B6EE18FC1B2BBB5C006134B0 /* STPAPIConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = B6EE18C41B2BBB5B006134B0 /* STPAPIConnection.h */; };
+		B6EE18FD1B2BBB5C006134B0 /* STPAPIConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EE18C51B2BBB5B006134B0 /* STPAPIConnection.m */; };
+		B6EE18FE1B2BBB5C006134B0 /* STPBankAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EE18C61B2BBB5B006134B0 /* STPBankAccount.m */; };
+		B6EE18FF1B2BBB5C006134B0 /* STPCard.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EE18C71B2BBB5B006134B0 /* STPCard.m */; };
+		B6EE19001B2BBB5C006134B0 /* STPFormEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = B6EE18C81B2BBB5B006134B0 /* STPFormEncoder.h */; };
+		B6EE19011B2BBB5C006134B0 /* STPFormEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EE18C91B2BBB5B006134B0 /* STPFormEncoder.m */; };
+		B6EE19021B2BBB5C006134B0 /* STPToken.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EE18CA1B2BBB5B006134B0 /* STPToken.m */; };
+		B6EE19031B2BBB5C006134B0 /* StripeError.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EE18CB1B2BBB5B006134B0 /* StripeError.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		045E7C0A1A5F41DE004751EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11C74B8F164043050071C2CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04CDB4411A5F2E1800B854EE;
+			remoteInfo = StripeiOS;
+		};
+		047E67E31A65E833001D7493 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11C74B8F164043050071C2CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 047E67A71A65E769001D7493;
+			remoteInfo = StripeiOSStaticWithoutApplePay;
+		};
+		049E85261A608027000B66CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11C74B8F164043050071C2CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 049E84AA1A605D93000B66CD;
+			remoteInfo = StripeiOSStatic;
+		};
+		04D12C121A5F556D0010446E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11C74B8F164043050071C2CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04D12C051A5F556D0010446E;
+			remoteInfo = StripeOSX;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		047E67A61A65E769001D7493 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		049E84A91A605D93000B66CD /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		04365D2C1A4CF86C00A3E1D4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		045E7C031A5F41DE004751EF /* .xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = .xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		047E67A81A65E769001D7493 /* lib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = lib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		049E84AB1A605D93000B66CD /* lib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = lib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		04B94BC71A47B78A00092C46 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		04CDB4421A5F2E1800B854EE /* .framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = .framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		04CDB51E1A5F3A9300B854EE /* STPAPIClientTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPAPIClientTest.m; sourceTree = "<group>"; };
+		04CDB51F1A5F3A9300B854EE /* STPFormEncoderTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPFormEncoderTest.m; sourceTree = "<group>"; };
+		04CDB5211A5F3A9300B854EE /* STPApplePayTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPApplePayTest.m; sourceTree = "<group>"; };
+		04CDB5221A5F3A9300B854EE /* STPBankAccountFunctionalTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPBankAccountFunctionalTest.m; sourceTree = "<group>"; };
+		04CDB5231A5F3A9300B854EE /* STPBankAccountTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPBankAccountTest.m; sourceTree = "<group>"; };
+		04CDB5241A5F3A9300B854EE /* STPCardFunctionalTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPCardFunctionalTest.m; sourceTree = "<group>"; };
+		04CDB5251A5F3A9300B854EE /* STPCardTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPCardTest.m; sourceTree = "<group>"; };
+		04CDB5261A5F3A9300B854EE /* STPCertTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPCertTest.m; sourceTree = "<group>"; };
+		04CDB5271A5F3A9300B854EE /* STPTokenTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPTokenTest.m; sourceTree = "<group>"; };
+		04CDB5621A5F3D2000B854EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04D12C061A5F556D0010446E /* .framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = .framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		04D12C101A5F556D0010446E /* .xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = .xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04D5BF9019BF958F009521A5 /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
+		11C74B9B164043050071C2CA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4A0D74F918F6106100966D7B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		B6EE188F1B2BBB5B006134B0 /* STPAPIClient+ApplePay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "STPAPIClient+ApplePay.m"; sourceTree = "<group>"; };
+		B6EE18901B2BBB5B006134B0 /* Stripe+ApplePay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Stripe+ApplePay.m"; sourceTree = "<group>"; };
+		B6EE18921B2BBB5B006134B0 /* Project-Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Project-Debug.xcconfig"; sourceTree = "<group>"; };
+		B6EE18931B2BBB5B006134B0 /* Project-Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Project-Release.xcconfig"; sourceTree = "<group>"; };
+		B6EE18941B2BBB5B006134B0 /* Project-Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Project-Shared.xcconfig"; sourceTree = "<group>"; };
+		B6EE18951B2BBB5B006134B0 /* StripeiOS Tests-Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "StripeiOS Tests-Debug.xcconfig"; sourceTree = "<group>"; };
+		B6EE18961B2BBB5B006134B0 /* StripeiOS Tests-Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "StripeiOS Tests-Release.xcconfig"; sourceTree = "<group>"; };
+		B6EE18971B2BBB5B006134B0 /* StripeiOS Tests-Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "StripeiOS Tests-Shared.xcconfig"; sourceTree = "<group>"; };
+		B6EE18981B2BBB5B006134B0 /* StripeiOS-Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "StripeiOS-Debug.xcconfig"; sourceTree = "<group>"; };
+		B6EE18991B2BBB5B006134B0 /* StripeiOS-Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "StripeiOS-Release.xcconfig"; sourceTree = "<group>"; };
+		B6EE189A1B2BBB5B006134B0 /* StripeiOS-Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "StripeiOS-Shared.xcconfig"; sourceTree = "<group>"; };
+		B6EE189B1B2BBB5B006134B0 /* StripeiOSStatic.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = StripeiOSStatic.xcconfig; sourceTree = "<group>"; };
+		B6EE189C1B2BBB5B006134B0 /* StripeiOSStaticFramework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = StripeiOSStaticFramework.xcconfig; sourceTree = "<group>"; };
+		B6EE189D1B2BBB5B006134B0 /* StripeiOSStaticFrameworkWithoutApplePay.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = StripeiOSStaticFrameworkWithoutApplePay.xcconfig; sourceTree = "<group>"; };
+		B6EE189E1B2BBB5B006134B0 /* StripeiOSStaticWithoutApplePay.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = StripeiOSStaticWithoutApplePay.xcconfig; sourceTree = "<group>"; };
+		B6EE189F1B2BBB5B006134B0 /* StripeOSX-Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "StripeOSX-Debug.xcconfig"; sourceTree = "<group>"; };
+		B6EE18A01B2BBB5B006134B0 /* StripeOSX-Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "StripeOSX-Release.xcconfig"; sourceTree = "<group>"; };
+		B6EE18A11B2BBB5B006134B0 /* StripeOSX-Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "StripeOSX-Shared.xcconfig"; sourceTree = "<group>"; };
+		B6EE18A21B2BBB5B006134B0 /* StripeOSXTests-Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "StripeOSXTests-Debug.xcconfig"; sourceTree = "<group>"; };
+		B6EE18A31B2BBB5B006134B0 /* StripeOSXTests-Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "StripeOSXTests-Release.xcconfig"; sourceTree = "<group>"; };
+		B6EE18A41B2BBB5B006134B0 /* StripeOSXTests-Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "StripeOSXTests-Shared.xcconfig"; sourceTree = "<group>"; };
+		B6EE18A61B2BBB5B006134B0 /* STPCheckoutDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPCheckoutDelegate.h; sourceTree = "<group>"; };
+		B6EE18A71B2BBB5B006134B0 /* STPCheckoutInternalUIWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPCheckoutInternalUIWebViewController.h; sourceTree = "<group>"; };
+		B6EE18A81B2BBB5B006134B0 /* STPCheckoutInternalUIWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPCheckoutInternalUIWebViewController.m; sourceTree = "<group>"; };
+		B6EE18A91B2BBB5B006134B0 /* STPCheckoutOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPCheckoutOptions.m; sourceTree = "<group>"; };
+		B6EE18AA1B2BBB5B006134B0 /* STPCheckoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPCheckoutViewController.m; sourceTree = "<group>"; };
+		B6EE18AB1B2BBB5B006134B0 /* STPCheckoutWebViewAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPCheckoutWebViewAdapter.h; sourceTree = "<group>"; };
+		B6EE18AC1B2BBB5B006134B0 /* STPColorUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPColorUtils.h; sourceTree = "<group>"; };
+		B6EE18AD1B2BBB5B006134B0 /* STPColorUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPColorUtils.m; sourceTree = "<group>"; };
+		B6EE18AE1B2BBB5B006134B0 /* STPIOSCheckoutWebViewAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPIOSCheckoutWebViewAdapter.h; sourceTree = "<group>"; };
+		B6EE18AF1B2BBB5B006134B0 /* STPIOSCheckoutWebViewAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPIOSCheckoutWebViewAdapter.m; sourceTree = "<group>"; };
+		B6EE18B01B2BBB5B006134B0 /* STPOSXCheckoutWebViewAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPOSXCheckoutWebViewAdapter.h; sourceTree = "<group>"; };
+		B6EE18B11B2BBB5B006134B0 /* STPOSXCheckoutWebViewAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPOSXCheckoutWebViewAdapter.m; sourceTree = "<group>"; };
+		B6EE18B21B2BBB5B006134B0 /* STPStrictURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPStrictURLProtocol.h; sourceTree = "<group>"; };
+		B6EE18B31B2BBB5B006134B0 /* STPStrictURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPStrictURLProtocol.m; sourceTree = "<group>"; };
+		B6EE18B41B2BBB5B006134B0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6EE18B71B2BBB5B006134B0 /* STPAPIClient+ApplePay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "STPAPIClient+ApplePay.h"; sourceTree = "<group>"; };
+		B6EE18B81B2BBB5B006134B0 /* Stripe+ApplePay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Stripe+ApplePay.h"; sourceTree = "<group>"; };
+		B6EE18BA1B2BBB5B006134B0 /* STPCheckoutOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPCheckoutOptions.h; sourceTree = "<group>"; };
+		B6EE18BB1B2BBB5B006134B0 /* STPCheckoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPCheckoutViewController.h; sourceTree = "<group>"; };
+		B6EE18BC1B2BBB5B006134B0 /* STPAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPAPIClient.h; sourceTree = "<group>"; };
+		B6EE18BD1B2BBB5B006134B0 /* STPBankAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPBankAccount.h; sourceTree = "<group>"; };
+		B6EE18BE1B2BBB5B006134B0 /* STPCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPCard.h; sourceTree = "<group>"; };
+		B6EE18BF1B2BBB5B006134B0 /* STPNullabilityMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPNullabilityMacros.h; sourceTree = "<group>"; };
+		B6EE18C01B2BBB5B006134B0 /* STPToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPToken.h; sourceTree = "<group>"; };
+		B6EE18C11B2BBB5B006134B0 /* Stripe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stripe.h; sourceTree = "<group>"; };
+		B6EE18C21B2BBB5B006134B0 /* StripeError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StripeError.h; sourceTree = "<group>"; };
+		B6EE18C31B2BBB5B006134B0 /* STPAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPAPIClient.m; sourceTree = "<group>"; };
+		B6EE18C41B2BBB5B006134B0 /* STPAPIConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPAPIConnection.h; sourceTree = "<group>"; };
+		B6EE18C51B2BBB5B006134B0 /* STPAPIConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPAPIConnection.m; sourceTree = "<group>"; };
+		B6EE18C61B2BBB5B006134B0 /* STPBankAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPBankAccount.m; sourceTree = "<group>"; };
+		B6EE18C71B2BBB5B006134B0 /* STPCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPCard.m; sourceTree = "<group>"; };
+		B6EE18C81B2BBB5B006134B0 /* STPFormEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPFormEncoder.h; sourceTree = "<group>"; };
+		B6EE18C91B2BBB5B006134B0 /* STPFormEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPFormEncoder.m; sourceTree = "<group>"; };
+		B6EE18CA1B2BBB5B006134B0 /* STPToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPToken.m; sourceTree = "<group>"; };
+		B6EE18CB1B2BBB5B006134B0 /* StripeError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StripeError.m; sourceTree = "<group>"; };
+		FAFC12C516E5767F0066297F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		045E7C001A5F41DE004751EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				045E7C091A5F41DE004751EF /* .framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		047E67A51A65E769001D7493 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		049E84A81A605D93000B66CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				049E84D71A605E99000B66CD /* AddressBook.framework in Frameworks */,
+				049E84D61A605E8F000B66CD /* PassKit.framework in Frameworks */,
+				049E84D51A605E82000B66CD /* Security.framework in Frameworks */,
+				049E84D41A605E7C000B66CD /* Foundation.framework in Frameworks */,
+				049E84D31A605E6A000B66CD /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04CDB43E1A5F2E1800B854EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04533E7D1A6877F400C7E52E /* PassKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04D12C021A5F556D0010446E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04D12C0D1A5F556D0010446E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04D12C111A5F556D0010446E /* .framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04CDB5281A5F3A9300B854EE /* StripeTests */ = {
+			isa = PBXGroup;
+			children = (
+				04CDB51E1A5F3A9300B854EE /* STPAPIClientTest.m */,
+				04CDB51F1A5F3A9300B854EE /* STPFormEncoderTest.m */,
+				04CDB5211A5F3A9300B854EE /* STPApplePayTest.m */,
+				04CDB5221A5F3A9300B854EE /* STPBankAccountFunctionalTest.m */,
+				04CDB5231A5F3A9300B854EE /* STPBankAccountTest.m */,
+				04CDB5241A5F3A9300B854EE /* STPCardFunctionalTest.m */,
+				04CDB5251A5F3A9300B854EE /* STPCardTest.m */,
+				04CDB5261A5F3A9300B854EE /* STPCertTest.m */,
+				04CDB5271A5F3A9300B854EE /* STPTokenTest.m */,
+				04CDB5611A5F3D2000B854EE /* Supporting Files */,
+			);
+			name = StripeTests;
+			path = Tests/Tests;
+			sourceTree = "<group>";
+		};
+		04CDB5611A5F3D2000B854EE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				04CDB5621A5F3D2000B854EE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			path = ../../StripeOSXTests;
+			sourceTree = "<group>";
+		};
+		11C74B8D164043050071C2CA = {
+			isa = PBXGroup;
+			children = (
+				B6EE188D1B2BBB5B006134B0 /* Stripe */,
+				04CDB5281A5F3A9300B854EE /* StripeTests */,
+				11C74B9A164043050071C2CA /* Frameworks */,
+				11C74B99164043050071C2CA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		11C74B99164043050071C2CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04CDB4421A5F2E1800B854EE /* .framework */,
+				045E7C031A5F41DE004751EF /* .xctest */,
+				04D12C061A5F556D0010446E /* .framework */,
+				04D12C101A5F556D0010446E /* .xctest */,
+				049E84AB1A605D93000B66CD /* lib.a */,
+				047E67A81A65E769001D7493 /* lib.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		11C74B9A164043050071C2CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04365D2C1A4CF86C00A3E1D4 /* CoreGraphics.framework */,
+				04B94BC71A47B78A00092C46 /* AddressBook.framework */,
+				04D5BF9019BF958F009521A5 /* PassKit.framework */,
+				4A0D74F918F6106100966D7B /* Security.framework */,
+				11C74B9B164043050071C2CA /* Foundation.framework */,
+				FAFC12C516E5767F0066297F /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B6EE188D1B2BBB5B006134B0 /* Stripe */ = {
+			isa = PBXGroup;
+			children = (
+				B6EE188E1B2BBB5B006134B0 /* ApplePay */,
+				B6EE18911B2BBB5B006134B0 /* BuildConfigurations */,
+				B6EE18A51B2BBB5B006134B0 /* Checkout */,
+				B6EE18B41B2BBB5B006134B0 /* Info.plist */,
+				B6EE18B51B2BBB5B006134B0 /* PublicHeaders */,
+				B6EE18C31B2BBB5B006134B0 /* STPAPIClient.m */,
+				B6EE18C41B2BBB5B006134B0 /* STPAPIConnection.h */,
+				B6EE18C51B2BBB5B006134B0 /* STPAPIConnection.m */,
+				B6EE18C61B2BBB5B006134B0 /* STPBankAccount.m */,
+				B6EE18C71B2BBB5B006134B0 /* STPCard.m */,
+				B6EE18C81B2BBB5B006134B0 /* STPFormEncoder.h */,
+				B6EE18C91B2BBB5B006134B0 /* STPFormEncoder.m */,
+				B6EE18CA1B2BBB5B006134B0 /* STPToken.m */,
+				B6EE18CB1B2BBB5B006134B0 /* StripeError.m */,
+			);
+			path = Stripe;
+			sourceTree = "<group>";
+		};
+		B6EE188E1B2BBB5B006134B0 /* ApplePay */ = {
+			isa = PBXGroup;
+			children = (
+				B6EE188F1B2BBB5B006134B0 /* STPAPIClient+ApplePay.m */,
+				B6EE18901B2BBB5B006134B0 /* Stripe+ApplePay.m */,
+			);
+			path = ApplePay;
+			sourceTree = "<group>";
+		};
+		B6EE18911B2BBB5B006134B0 /* BuildConfigurations */ = {
+			isa = PBXGroup;
+			children = (
+				B6EE18921B2BBB5B006134B0 /* Project-Debug.xcconfig */,
+				B6EE18931B2BBB5B006134B0 /* Project-Release.xcconfig */,
+				B6EE18941B2BBB5B006134B0 /* Project-Shared.xcconfig */,
+				B6EE18951B2BBB5B006134B0 /* StripeiOS Tests-Debug.xcconfig */,
+				B6EE18961B2BBB5B006134B0 /* StripeiOS Tests-Release.xcconfig */,
+				B6EE18971B2BBB5B006134B0 /* StripeiOS Tests-Shared.xcconfig */,
+				B6EE18981B2BBB5B006134B0 /* StripeiOS-Debug.xcconfig */,
+				B6EE18991B2BBB5B006134B0 /* StripeiOS-Release.xcconfig */,
+				B6EE189A1B2BBB5B006134B0 /* StripeiOS-Shared.xcconfig */,
+				B6EE189B1B2BBB5B006134B0 /* StripeiOSStatic.xcconfig */,
+				B6EE189C1B2BBB5B006134B0 /* StripeiOSStaticFramework.xcconfig */,
+				B6EE189D1B2BBB5B006134B0 /* StripeiOSStaticFrameworkWithoutApplePay.xcconfig */,
+				B6EE189E1B2BBB5B006134B0 /* StripeiOSStaticWithoutApplePay.xcconfig */,
+				B6EE189F1B2BBB5B006134B0 /* StripeOSX-Debug.xcconfig */,
+				B6EE18A01B2BBB5B006134B0 /* StripeOSX-Release.xcconfig */,
+				B6EE18A11B2BBB5B006134B0 /* StripeOSX-Shared.xcconfig */,
+				B6EE18A21B2BBB5B006134B0 /* StripeOSXTests-Debug.xcconfig */,
+				B6EE18A31B2BBB5B006134B0 /* StripeOSXTests-Release.xcconfig */,
+				B6EE18A41B2BBB5B006134B0 /* StripeOSXTests-Shared.xcconfig */,
+			);
+			path = BuildConfigurations;
+			sourceTree = "<group>";
+		};
+		B6EE18A51B2BBB5B006134B0 /* Checkout */ = {
+			isa = PBXGroup;
+			children = (
+				B6EE18A61B2BBB5B006134B0 /* STPCheckoutDelegate.h */,
+				B6EE18A71B2BBB5B006134B0 /* STPCheckoutInternalUIWebViewController.h */,
+				B6EE18A81B2BBB5B006134B0 /* STPCheckoutInternalUIWebViewController.m */,
+				B6EE18A91B2BBB5B006134B0 /* STPCheckoutOptions.m */,
+				B6EE18AA1B2BBB5B006134B0 /* STPCheckoutViewController.m */,
+				B6EE18AB1B2BBB5B006134B0 /* STPCheckoutWebViewAdapter.h */,
+				B6EE18AC1B2BBB5B006134B0 /* STPColorUtils.h */,
+				B6EE18AD1B2BBB5B006134B0 /* STPColorUtils.m */,
+				B6EE18AE1B2BBB5B006134B0 /* STPIOSCheckoutWebViewAdapter.h */,
+				B6EE18AF1B2BBB5B006134B0 /* STPIOSCheckoutWebViewAdapter.m */,
+				B6EE18B01B2BBB5B006134B0 /* STPOSXCheckoutWebViewAdapter.h */,
+				B6EE18B11B2BBB5B006134B0 /* STPOSXCheckoutWebViewAdapter.m */,
+				B6EE18B21B2BBB5B006134B0 /* STPStrictURLProtocol.h */,
+				B6EE18B31B2BBB5B006134B0 /* STPStrictURLProtocol.m */,
+			);
+			path = Checkout;
+			sourceTree = "<group>";
+		};
+		B6EE18B51B2BBB5B006134B0 /* PublicHeaders */ = {
+			isa = PBXGroup;
+			children = (
+				B6EE18B61B2BBB5B006134B0 /* ApplePay */,
+				B6EE18B91B2BBB5B006134B0 /* Checkout */,
+				B6EE18BC1B2BBB5B006134B0 /* STPAPIClient.h */,
+				B6EE18BD1B2BBB5B006134B0 /* STPBankAccount.h */,
+				B6EE18BE1B2BBB5B006134B0 /* STPCard.h */,
+				B6EE18BF1B2BBB5B006134B0 /* STPNullabilityMacros.h */,
+				B6EE18C01B2BBB5B006134B0 /* STPToken.h */,
+				B6EE18C11B2BBB5B006134B0 /* Stripe.h */,
+				B6EE18C21B2BBB5B006134B0 /* StripeError.h */,
+			);
+			path = PublicHeaders;
+			sourceTree = "<group>";
+		};
+		B6EE18B61B2BBB5B006134B0 /* ApplePay */ = {
+			isa = PBXGroup;
+			children = (
+				B6EE18B71B2BBB5B006134B0 /* STPAPIClient+ApplePay.h */,
+				B6EE18B81B2BBB5B006134B0 /* Stripe+ApplePay.h */,
+			);
+			path = ApplePay;
+			sourceTree = "<group>";
+		};
+		B6EE18B91B2BBB5B006134B0 /* Checkout */ = {
+			isa = PBXGroup;
+			children = (
+				B6EE18BA1B2BBB5B006134B0 /* STPCheckoutOptions.h */,
+				B6EE18BB1B2BBB5B006134B0 /* STPCheckoutViewController.h */,
+			);
+			path = Checkout;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		04415C711A6605BD001225ED /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		047E67CD1A65E79D001D7493 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		049E84D81A605EAA000B66CD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04CDB43F1A5F2E1800B854EE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6EE18F51B2BBB5C006134B0 /* STPBankAccount.h in Headers */,
+				B6EE18FC1B2BBB5C006134B0 /* STPAPIConnection.h in Headers */,
+				B6EE18F41B2BBB5C006134B0 /* STPAPIClient.h in Headers */,
+				B6EE18F61B2BBB5C006134B0 /* STPCard.h in Headers */,
+				B6EE18E71B2BBB5C006134B0 /* STPColorUtils.h in Headers */,
+				B6EE18EB1B2BBB5C006134B0 /* STPOSXCheckoutWebViewAdapter.h in Headers */,
+				B6EE18E91B2BBB5C006134B0 /* STPIOSCheckoutWebViewAdapter.h in Headers */,
+				B6EE18F71B2BBB5C006134B0 /* STPNullabilityMacros.h in Headers */,
+				B6EE18ED1B2BBB5C006134B0 /* STPStrictURLProtocol.h in Headers */,
+				B6EE18F81B2BBB5C006134B0 /* STPToken.h in Headers */,
+				B6EE18F01B2BBB5C006134B0 /* STPAPIClient+ApplePay.h in Headers */,
+				B6EE18FA1B2BBB5C006134B0 /* StripeError.h in Headers */,
+				B6EE18E11B2BBB5C006134B0 /* STPCheckoutDelegate.h in Headers */,
+				B6EE18F11B2BBB5C006134B0 /* Stripe+ApplePay.h in Headers */,
+				B6EE18E61B2BBB5C006134B0 /* STPCheckoutWebViewAdapter.h in Headers */,
+				B6EE18E21B2BBB5C006134B0 /* STPCheckoutInternalUIWebViewController.h in Headers */,
+				B6EE18F21B2BBB5C006134B0 /* STPCheckoutOptions.h in Headers */,
+				B6EE19001B2BBB5C006134B0 /* STPFormEncoder.h in Headers */,
+				B6EE18F31B2BBB5C006134B0 /* STPCheckoutViewController.h in Headers */,
+				B6EE18F91B2BBB5C006134B0 /* Stripe.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04D12C031A5F556D0010446E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		045E7C021A5F41DE004751EF /* StripeiOS Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 045E7C0C1A5F41DE004751EF /* Build configuration list for PBXNativeTarget "StripeiOS Tests" */;
+			buildPhases = (
+				045E7BFF1A5F41DE004751EF /* Sources */,
+				045E7C001A5F41DE004751EF /* Frameworks */,
+				045E7C011A5F41DE004751EF /* Resources */,
+				04415C711A6605BD001225ED /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				045E7C0B1A5F41DE004751EF /* PBXTargetDependency */,
+			);
+			name = "StripeiOS Tests";
+			productName = "StripeiOS Tests";
+			productReference = 045E7C031A5F41DE004751EF /* .xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		047E67A71A65E769001D7493 /* StripeiOSStaticWithoutApplePay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 047E67B91A65E76A001D7493 /* Build configuration list for PBXNativeTarget "StripeiOSStaticWithoutApplePay" */;
+			buildPhases = (
+				047E67A41A65E769001D7493 /* Sources */,
+				047E67A51A65E769001D7493 /* Frameworks */,
+				047E67A61A65E769001D7493 /* CopyFiles */,
+				047E67CD1A65E79D001D7493 /* Headers */,
+				047E67E61A65EAD3001D7493 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StripeiOSStaticWithoutApplePay;
+			productName = StripeiOSStaticWithoutApplePay;
+			productReference = 047E67A81A65E769001D7493 /* lib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		049E84AA1A605D93000B66CD /* StripeiOSStatic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 049E84BC1A605D93000B66CD /* Build configuration list for PBXNativeTarget "StripeiOSStatic" */;
+			buildPhases = (
+				049E84A71A605D93000B66CD /* Sources */,
+				049E84A81A605D93000B66CD /* Frameworks */,
+				049E84A91A605D93000B66CD /* Copy Files */,
+				049E84D81A605EAA000B66CD /* Headers */,
+				049E85211A607DA4000B66CD /* Build Framework */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StripeiOSStatic;
+			productName = StripeiOSStatic;
+			productReference = 049E84AB1A605D93000B66CD /* lib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		04CDB4411A5F2E1800B854EE /* StripeiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04CDB4551A5F2E1800B854EE /* Build configuration list for PBXNativeTarget "StripeiOS" */;
+			buildPhases = (
+				04CDB43D1A5F2E1800B854EE /* Sources */,
+				04CDB43E1A5F2E1800B854EE /* Frameworks */,
+				04CDB43F1A5F2E1800B854EE /* Headers */,
+				04CDB4401A5F2E1800B854EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StripeiOS;
+			productName = "Stripe-iOS";
+			productReference = 04CDB4421A5F2E1800B854EE /* .framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		04D12C051A5F556D0010446E /* StripeOSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04D12C191A5F556D0010446E /* Build configuration list for PBXNativeTarget "StripeOSX" */;
+			buildPhases = (
+				04D12C011A5F556D0010446E /* Sources */,
+				04D12C021A5F556D0010446E /* Frameworks */,
+				04D12C031A5F556D0010446E /* Headers */,
+				04D12C041A5F556D0010446E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StripeOSX;
+			productName = StripeOSX;
+			productReference = 04D12C061A5F556D0010446E /* .framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		04D12C0F1A5F556D0010446E /* StripeOSXTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04D12C1C1A5F556D0010446E /* Build configuration list for PBXNativeTarget "StripeOSXTests" */;
+			buildPhases = (
+				04D12C0C1A5F556D0010446E /* Sources */,
+				04D12C0D1A5F556D0010446E /* Frameworks */,
+				04D12C0E1A5F556D0010446E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04D12C131A5F556D0010446E /* PBXTargetDependency */,
+			);
+			name = StripeOSXTests;
+			productName = StripeOSXTests;
+			productReference = 04D12C101A5F556D0010446E /* .xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		11C74B8F164043050071C2CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = STP;
+				LastTestingUpgradeCheck = 0510;
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Stripe, Inc";
+				TargetAttributes = {
+					045E7C021A5F41DE004751EF = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					047E67A71A65E769001D7493 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					047E67DF1A65E82D001D7493 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					049E84AA1A605D93000B66CD = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					049E85221A607FFD000B66CD = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					04CDB4411A5F2E1800B854EE = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					04D12C051A5F556D0010446E = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					04D12C0F1A5F556D0010446E = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 11C74B92164043050071C2CA /* Build configuration list for PBXProject "Stripe" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 11C74B8D164043050071C2CA;
+			productRefGroup = 11C74B99164043050071C2CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04CDB4411A5F2E1800B854EE /* StripeiOS */,
+				045E7C021A5F41DE004751EF /* StripeiOS Tests */,
+				04D12C051A5F556D0010446E /* StripeOSX */,
+				04D12C0F1A5F556D0010446E /* StripeOSXTests */,
+				049E84AA1A605D93000B66CD /* StripeiOSStatic */,
+				049E85221A607FFD000B66CD /* StripeiOSStaticFramework */,
+				047E67A71A65E769001D7493 /* StripeiOSStaticWithoutApplePay */,
+				047E67DF1A65E82D001D7493 /* StripeiOSStaticFrameworkWithoutApplePay */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		045E7C011A5F41DE004751EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04CDB4401A5F2E1800B854EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6EE18CF1B2BBB5C006134B0 /* Project-Release.xcconfig in Resources */,
+				B6EE18D71B2BBB5C006134B0 /* StripeiOSStatic.xcconfig in Resources */,
+				B6EE18D51B2BBB5C006134B0 /* StripeiOS-Release.xcconfig in Resources */,
+				B6EE18DC1B2BBB5C006134B0 /* StripeOSX-Release.xcconfig in Resources */,
+				B6EE18DF1B2BBB5C006134B0 /* StripeOSXTests-Release.xcconfig in Resources */,
+				B6EE18D91B2BBB5C006134B0 /* StripeiOSStaticFrameworkWithoutApplePay.xcconfig in Resources */,
+				B6EE18E01B2BBB5C006134B0 /* StripeOSXTests-Shared.xcconfig in Resources */,
+				B6EE18D61B2BBB5C006134B0 /* StripeiOS-Shared.xcconfig in Resources */,
+				B6EE18EF1B2BBB5C006134B0 /* Info.plist in Resources */,
+				B6EE18D81B2BBB5C006134B0 /* StripeiOSStaticFramework.xcconfig in Resources */,
+				B6EE18DB1B2BBB5C006134B0 /* StripeOSX-Debug.xcconfig in Resources */,
+				B6EE18D31B2BBB5C006134B0 /* StripeiOS Tests-Shared.xcconfig in Resources */,
+				B6EE18D41B2BBB5C006134B0 /* StripeiOS-Debug.xcconfig in Resources */,
+				B6EE18D01B2BBB5C006134B0 /* Project-Shared.xcconfig in Resources */,
+				B6EE18DA1B2BBB5C006134B0 /* StripeiOSStaticWithoutApplePay.xcconfig in Resources */,
+				B6EE18D11B2BBB5C006134B0 /* StripeiOS Tests-Debug.xcconfig in Resources */,
+				B6EE18DD1B2BBB5C006134B0 /* StripeOSX-Shared.xcconfig in Resources */,
+				B6EE18CE1B2BBB5C006134B0 /* Project-Debug.xcconfig in Resources */,
+				B6EE18DE1B2BBB5C006134B0 /* StripeOSXTests-Debug.xcconfig in Resources */,
+				B6EE18D21B2BBB5C006134B0 /* StripeiOS Tests-Release.xcconfig in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04D12C041A5F556D0010446E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04D12C0E1A5F556D0010446E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		047E67E51A65E837001D7493 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\n# If we're already inside this script then die\nif [ -n \"$RW_MULTIPLATFORM_BUILD_IN_PROGRESS\" ]; then\nexit 0\nfi\nexport RW_MULTIPLATFORM_BUILD_IN_PROGRESS=1\n\nRW_FRAMEWORK_NAME=\"Stripe\"\nRW_INPUT_STATIC_LIB=\"libStripe.a\"\nRW_FRAMEWORK_LOCATION=\"${BUILT_PRODUCTS_DIR}/${RW_FRAMEWORK_NAME}.framework\"\n\nfunction build_static_library {\n    # Will rebuild the static library as specified\n    #     build_static_library sdk\n    xcrun xcodebuild -project \"${PROJECT_FILE_PATH}\" \\\n    -target \"${TARGET_NAME}\" \\\n    -configuration \"${CONFIGURATION}\" \\\n    -sdk \"${1}\" \\\n    ONLY_ACTIVE_ARCH=NO \\\n    BUILD_DIR=\"${BUILD_DIR}\" \\\n    OBJROOT=\"${OBJROOT}\" \\\n    BUILD_ROOT=\"${BUILD_ROOT}\" \\\n    SYMROOT=\"${SYMROOT}\" $ACTION\n}\n\nfunction make_fat_library {\n    # Will smash 2 static libs together\n    #     make_fat_library in1 in2 out\n    xcrun lipo -create \"${1}\" \"${2}\" -output \"${3}\"\n}\n\n# 1 - Extract the platform (iphoneos/iphonesimulator) from the SDK name\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]; then\nRW_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\necho \"Could not find platform name from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\n# 2 - Extract the version from the SDK\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]; then\nRW_SDK_VERSION=${BASH_REMATCH[1]}\nelse\necho \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\n# 3 - Determine the other platform\nif [ \"$RW_SDK_PLATFORM\" == \"iphoneos\" ]; then\nRW_OTHER_PLATFORM=iphonesimulator\nelse\nRW_OTHER_PLATFORM=iphoneos\nfi\n\n# 4 - Find the build directory\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$RW_SDK_PLATFORM$ ]]; then\nRW_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${RW_OTHER_PLATFORM}\"\nelse\necho \"Could not find other platform build directory.\"\nexit 1\nfi\n\n# Build the other platform.\nbuild_static_library \"${RW_OTHER_PLATFORM}${RW_SDK_VERSION}\"\n\n# If we're currently building for iphonesimulator, then need to rebuild\n#   to ensure that we get both i386 and x86_64\nif [ \"$RW_SDK_PLATFORM\" == \"iphonesimulator\" ]; then\nbuild_static_library \"${SDK_NAME}\"\nfi\n\n# Join the 2 static libs into 1 and push into the .framework\nmake_fat_library \"${BUILT_PRODUCTS_DIR}/${RW_INPUT_STATIC_LIB}\" \\\n\"${RW_OTHER_BUILT_PRODUCTS_DIR}/${RW_INPUT_STATIC_LIB}\" \\\n\"${RW_FRAMEWORK_LOCATION}/Versions/A/${RW_FRAMEWORK_NAME}\"\n\n# Ensure that the framework is present in both platform's build directories\ncp -a \"${RW_FRAMEWORK_LOCATION}/Versions/A/${RW_FRAMEWORK_NAME}\" \\\n\"${RW_OTHER_BUILT_PRODUCTS_DIR}/${RW_FRAMEWORK_NAME}.framework/Versions/A/${RW_FRAMEWORK_NAME}\"";
+		};
+		047E67E61A65EAD3001D7493 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nexport FRAMEWORK_DIR=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework\"\n\n# Create the path to the real Headers directory\nmkdir -p \"${FRAMEWORK_DIR}/Versions/A/Headers\"\nmkdir -p \"${FRAMEWORK_DIR}/Versions/A/Modules\"\n\n# Create the required symlinks\nln -sfh A \"${FRAMEWORK_DIR}/Versions/Current\"\nln -sfh Versions/Current/Headers \"${FRAMEWORK_DIR}/Headers\"\nln -sfh Versions/Current/Modules \"${FRAMEWORK_DIR}/Modules\"\nln -sfh \"Versions/Current/${PRODUCT_NAME}\" \\\n\"${FRAMEWORK_DIR}/${PRODUCT_NAME}\"\n\n# Copy the public headers into the framework\n/bin/cp -a \"${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}/\" \\\n\"${FRAMEWORK_DIR}/Versions/A/Headers\"\n\necho \"framework module Stripe {\" \\\n\"umbrella header \\\"Stripe.h\\\"\" \\\n\"export *\" \\\n\"module * { export * }\" \\\n\"}\" > \"${FRAMEWORK_DIR}/Versions/A/Modules/module.modulemap\"\n";
+		};
+		049E85211A607DA4000B66CD /* Build Framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Build Framework";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nexport FRAMEWORK_DIR=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework\"\n\n# Create the path to the real Headers directory\nmkdir -p \"${FRAMEWORK_DIR}/Versions/A/Headers\"\nmkdir -p \"${FRAMEWORK_DIR}/Versions/A/Modules\"\n\n# Create the required symlinks\nln -sfh A \"${FRAMEWORK_DIR}/Versions/Current\"\nln -sfh Versions/Current/Headers \"${FRAMEWORK_DIR}/Headers\"\nln -sfh Versions/Current/Modules \"${FRAMEWORK_DIR}/Modules\"\nln -sfh \"Versions/Current/${PRODUCT_NAME}\" \\\n\"${FRAMEWORK_DIR}/${PRODUCT_NAME}\"\n\n# Copy the public headers into the framework\n/bin/cp -a \"${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}/\" \\\n\"${FRAMEWORK_DIR}/Versions/A/Headers\"\n\necho \"framework module Stripe {\" \\\n\"umbrella header \\\"Stripe.h\\\"\" \\\n\"export *\" \\\n\"module * { export * }\" \\\n\"}\" > \"${FRAMEWORK_DIR}/Versions/A/Modules/module.modulemap\"\n";
+		};
+		049E85281A608030000B66CD /* MultiPlatform Build */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "MultiPlatform Build";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\n# If we're already inside this script then die\nif [ -n \"$RW_MULTIPLATFORM_BUILD_IN_PROGRESS\" ]; then\nexit 0\nfi\nexport RW_MULTIPLATFORM_BUILD_IN_PROGRESS=1\n\nRW_FRAMEWORK_NAME=\"Stripe\"\nRW_INPUT_STATIC_LIB=\"libStripe.a\"\nRW_FRAMEWORK_LOCATION=\"${BUILT_PRODUCTS_DIR}/${RW_FRAMEWORK_NAME}.framework\"\n\nfunction build_static_library {\n    # Will rebuild the static library as specified\n    #     build_static_library sdk\n    xcrun xcodebuild -project \"${PROJECT_FILE_PATH}\" \\\n    -target \"${TARGET_NAME}\" \\\n    -configuration \"${CONFIGURATION}\" \\\n    -sdk \"${1}\" \\\n    ONLY_ACTIVE_ARCH=NO \\\n    BUILD_DIR=\"${BUILD_DIR}\" \\\n    OBJROOT=\"${OBJROOT}\" \\\n    BUILD_ROOT=\"${BUILD_ROOT}\" \\\n    SYMROOT=\"${SYMROOT}\" $ACTION\n}\n\nfunction make_fat_library {\n    # Will smash 2 static libs together\n    #     make_fat_library in1 in2 out\n    xcrun lipo -create \"${1}\" \"${2}\" -output \"${3}\"\n}\n\n# 1 - Extract the platform (iphoneos/iphonesimulator) from the SDK name\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]; then\nRW_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\necho \"Could not find platform name from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\n# 2 - Extract the version from the SDK\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]; then\nRW_SDK_VERSION=${BASH_REMATCH[1]}\nelse\necho \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\n# 3 - Determine the other platform\nif [ \"$RW_SDK_PLATFORM\" == \"iphoneos\" ]; then\nRW_OTHER_PLATFORM=iphonesimulator\nelse\nRW_OTHER_PLATFORM=iphoneos\nfi\n\n# 4 - Find the build directory\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$RW_SDK_PLATFORM$ ]]; then\nRW_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${RW_OTHER_PLATFORM}\"\nelse\necho \"Could not find other platform build directory.\"\nexit 1\nfi\n\n# Build the other platform.\nbuild_static_library \"${RW_OTHER_PLATFORM}${RW_SDK_VERSION}\"\n\n# If we're currently building for iphonesimulator, then need to rebuild\n#   to ensure that we get both i386 and x86_64\nif [ \"$RW_SDK_PLATFORM\" == \"iphonesimulator\" ]; then\nbuild_static_library \"${SDK_NAME}\"\nfi\n\n# Join the 2 static libs into 1 and push into the .framework\nmake_fat_library \"${BUILT_PRODUCTS_DIR}/${RW_INPUT_STATIC_LIB}\" \\\n\"${RW_OTHER_BUILT_PRODUCTS_DIR}/${RW_INPUT_STATIC_LIB}\" \\\n\"${RW_FRAMEWORK_LOCATION}/Versions/A/${RW_FRAMEWORK_NAME}\"\n\n# Ensure that the framework is present in both platform's build directories\ncp -a \"${RW_FRAMEWORK_LOCATION}/Versions/A/${RW_FRAMEWORK_NAME}\" \\\n\"${RW_OTHER_BUILT_PRODUCTS_DIR}/${RW_FRAMEWORK_NAME}.framework/Versions/A/${RW_FRAMEWORK_NAME}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		045E7BFF1A5F41DE004751EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04415C671A6605B5001225ED /* STPAPIClientTest.m in Sources */,
+				04415C681A6605B5001225ED /* STPFormEncoderTest.m in Sources */,
+				04415C6A1A6605B5001225ED /* STPApplePayTest.m in Sources */,
+				04415C6B1A6605B5001225ED /* STPBankAccountFunctionalTest.m in Sources */,
+				04415C6C1A6605B5001225ED /* STPBankAccountTest.m in Sources */,
+				04415C6D1A6605B5001225ED /* STPCardFunctionalTest.m in Sources */,
+				04415C6E1A6605B5001225ED /* STPCardTest.m in Sources */,
+				04415C6F1A6605B5001225ED /* STPCertTest.m in Sources */,
+				04415C701A6605B5001225ED /* STPTokenTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		047E67A41A65E769001D7493 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		049E84A71A605D93000B66CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04CDB43D1A5F2E1800B854EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6EE18EA1B2BBB5C006134B0 /* STPIOSCheckoutWebViewAdapter.m in Sources */,
+				B6EE18FD1B2BBB5C006134B0 /* STPAPIConnection.m in Sources */,
+				B6EE18E41B2BBB5C006134B0 /* STPCheckoutOptions.m in Sources */,
+				B6EE18FE1B2BBB5C006134B0 /* STPBankAccount.m in Sources */,
+				B6EE18EC1B2BBB5C006134B0 /* STPOSXCheckoutWebViewAdapter.m in Sources */,
+				B6EE18E81B2BBB5C006134B0 /* STPColorUtils.m in Sources */,
+				B6EE19011B2BBB5C006134B0 /* STPFormEncoder.m in Sources */,
+				B6EE18CD1B2BBB5C006134B0 /* Stripe+ApplePay.m in Sources */,
+				B6EE18CC1B2BBB5B006134B0 /* STPAPIClient+ApplePay.m in Sources */,
+				B6EE19031B2BBB5C006134B0 /* StripeError.m in Sources */,
+				B6EE18E31B2BBB5C006134B0 /* STPCheckoutInternalUIWebViewController.m in Sources */,
+				B6EE18E51B2BBB5C006134B0 /* STPCheckoutViewController.m in Sources */,
+				B6EE18EE1B2BBB5C006134B0 /* STPStrictURLProtocol.m in Sources */,
+				B6EE19021B2BBB5C006134B0 /* STPToken.m in Sources */,
+				B6EE18FB1B2BBB5C006134B0 /* STPAPIClient.m in Sources */,
+				B6EE18FF1B2BBB5C006134B0 /* STPCard.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04D12C011A5F556D0010446E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04D12C0C1A5F556D0010446E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04D12C401A5F55FA0010446E /* STPAPIClientTest.m in Sources */,
+				04D12C411A5F55FA0010446E /* STPFormEncoderTest.m in Sources */,
+				04D12C431A5F55FA0010446E /* STPBankAccountFunctionalTest.m in Sources */,
+				04D12C441A5F55FA0010446E /* STPBankAccountTest.m in Sources */,
+				04D12C451A5F55FA0010446E /* STPCardFunctionalTest.m in Sources */,
+				04D12C461A5F55FA0010446E /* STPCardTest.m in Sources */,
+				04D12C471A5F55FA0010446E /* STPCertTest.m in Sources */,
+				04D12C481A5F55FA0010446E /* STPTokenTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		045E7C0B1A5F41DE004751EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04CDB4411A5F2E1800B854EE /* StripeiOS */;
+			targetProxy = 045E7C0A1A5F41DE004751EF /* PBXContainerItemProxy */;
+		};
+		047E67E41A65E833001D7493 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 047E67A71A65E769001D7493 /* StripeiOSStaticWithoutApplePay */;
+			targetProxy = 047E67E31A65E833001D7493 /* PBXContainerItemProxy */;
+		};
+		049E85271A608027000B66CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 049E84AA1A605D93000B66CD /* StripeiOSStatic */;
+			targetProxy = 049E85261A608027000B66CD /* PBXContainerItemProxy */;
+		};
+		04D12C131A5F556D0010446E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04D12C051A5F556D0010446E /* StripeOSX */;
+			targetProxy = 04D12C121A5F556D0010446E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		045E7C0D1A5F41DE004751EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		045E7C0E1A5F41DE004751EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		047E67BA1A65E76A001D7493 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		047E67BB1A65E76A001D7493 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		047E67E11A65E82D001D7493 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		047E67E21A65E82D001D7493 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		049E84BD1A605D93000B66CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		049E84BE1A605D93000B66CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		049E85241A607FFD000B66CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		049E85251A607FFD000B66CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		04CDB4561A5F2E1800B854EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		04CDB4571A5F2E1800B854EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		04D12C1A1A5F556D0010446E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		04D12C1B1A5F556D0010446E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		04D12C1D1A5F556D0010446E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		04D12C1E1A5F556D0010446E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		11C74BBA164043050071C2CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		11C74BBB164043050071C2CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		045E7C0C1A5F41DE004751EF /* Build configuration list for PBXNativeTarget "StripeiOS Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				045E7C0D1A5F41DE004751EF /* Debug */,
+				045E7C0E1A5F41DE004751EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		047E67B91A65E76A001D7493 /* Build configuration list for PBXNativeTarget "StripeiOSStaticWithoutApplePay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				047E67BA1A65E76A001D7493 /* Debug */,
+				047E67BB1A65E76A001D7493 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		047E67E01A65E82D001D7493 /* Build configuration list for PBXAggregateTarget "StripeiOSStaticFrameworkWithoutApplePay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				047E67E11A65E82D001D7493 /* Debug */,
+				047E67E21A65E82D001D7493 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		049E84BC1A605D93000B66CD /* Build configuration list for PBXNativeTarget "StripeiOSStatic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				049E84BD1A605D93000B66CD /* Debug */,
+				049E84BE1A605D93000B66CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		049E85231A607FFD000B66CD /* Build configuration list for PBXAggregateTarget "StripeiOSStaticFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				049E85241A607FFD000B66CD /* Debug */,
+				049E85251A607FFD000B66CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04CDB4551A5F2E1800B854EE /* Build configuration list for PBXNativeTarget "StripeiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04CDB4561A5F2E1800B854EE /* Debug */,
+				04CDB4571A5F2E1800B854EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04D12C191A5F556D0010446E /* Build configuration list for PBXNativeTarget "StripeOSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04D12C1A1A5F556D0010446E /* Debug */,
+				04D12C1B1A5F556D0010446E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04D12C1C1A5F556D0010446E /* Build configuration list for PBXNativeTarget "StripeOSXTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04D12C1D1A5F556D0010446E /* Debug */,
+				04D12C1E1A5F556D0010446E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11C74B92164043050071C2CA /* Build configuration list for PBXProject "Stripe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11C74BBA164043050071C2CA /* Debug */,
+				11C74BBB164043050071C2CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 11C74B8F164043050071C2CA /* Project object */;
+}
